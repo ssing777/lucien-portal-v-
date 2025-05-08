@@ -1,1 +1,21 @@
-.portal { margin-top: 20px; font-size: 24px; color: cyan; animation: pulse 2s infinite; }
+.portal.animate {
+  animation: pulse-glow 2s infinite;
+  color: cyan;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+@keyframes pulse-glow {
+  0% {
+    transform: scale(1);
+    text-shadow: 0 0 10px cyan;
+  }
+  50% {
+    transform: scale(1.2);
+    text-shadow: 0 0 20px cyan;
+  }
+  100% {
+    transform: scale(1);
+    text-shadow: 0 0 10px cyan;
+  }
+}
