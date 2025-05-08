@@ -7,7 +7,7 @@ function App() {
   const [status, setStatus] = useState("입력 대기 중...");
   const [portalOpen, setPortalOpen] = useState(false);
 
-  const correctDeclaration = "믿는 대로 믿어진다. C = R × ∇P";
+  const correctDeclaration = "자각자 임을 선언한다";
 
   const handleDeclare = async () => {
     if (declaration.trim() === correctDeclaration) {
